@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+
+:root{
+            --color-white: #fff;
+            --color-dark1: rgb(39, 39, 39);
+            --color-dark2: #2d2d2d;
+            --color-dark3: #414141;
+            --color-dark4: #1c1c1c;
+            --color-dark5: #343434;
+            --color-purple: #b040ff;
+}
+
+header {
+    background-color: rgba(29, 37, 34, 0.788);
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    font-family: 'Paytone One';
+    /* font-family: Rowdies; */
+    padding: 1px 10px;
+    color: var(--color-dark2);
+}
+
+header > h1 {
+    font-weight: normal;
+    color: rgb(246, 251, 253);
+}
+
+header > nav > ul{
+    display: flex;
+    width: 80VW;
+    justify-content:center;
+}
+
+header > nav > ul > li {
+    padding: 10px;
+    list-style:none;
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+header > nav > ul > li:hover {
+    background-color: rgba(192, 192, 192, 0.445);
+}
+
+#menu{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+    align-self: right;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#seta {
+    padding: 5px;
+    width: 5px;
+    height: 5px;
+    margin: auto;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    /* transform: rotate(45deg); */
+    margin-left: auto;
+    margin-right: 50px;
+    transform: rotate(223deg);
+}
+
+#mobile_menu {
+    background-color: white;
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);      
+    display: none;
+}
+
+
+@media screen and (max-width: 1242px) {
+    header > nav {
+        display: none;
+    }
+    
+    #seta{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    header > nav {
+        display: none;
+    }
+
+    #seta{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
