@@ -29,6 +29,10 @@ header > h1 {
     color: rgb(246, 251, 253);
 }
 
+header > nav {
+    display: block;
+}
+
 header > nav > ul{
     display: flex;
     width: 80VW;
@@ -78,10 +82,10 @@ header > nav > ul > li:hover {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);      
+    transform: translate(-50%, -50%);    
+    opacity: 1;
     display: none;
 }
-
 
 @media screen and (max-width: 1242px) {
     header > nav {
@@ -96,8 +100,10 @@ header > nav > ul > li:hover {
         display: block;
     }
 }
+
+
 @media screen and (max-width: 768px) {
-    header > nav {
+    header > nav > ul{
         display: none;
     }
 
