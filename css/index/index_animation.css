@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+#developer_animation {
+    margin: auto;
+    display: flex;
+}
+#developer_animation > p {
+    font-family: 'Black Ops One';
+    font-size: 130px;
+    color: white;
+}
+
+@keyframes show {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes exit {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+#developer_animation.active_name {
+    .name{
+        display: block;
+    }
+    .developer{
+        display: none;
+    }
+}
+#developer_animation.active_developer {
+    .name{
+        display: none;
+    }
+    .developer{
+        display: block;
+    }
+}
