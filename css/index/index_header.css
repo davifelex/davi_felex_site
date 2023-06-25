@@ -2,16 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
 
-:root{
-            --color-white: #fff;
-            --color-dark1: rgb(39, 39, 39);
-            --color-dark2: #2d2d2d;
-            --color-dark3: #414141;
-            --color-dark4: #1c1c1c;
-            --color-dark5: #343434;
-            --color-purple: #b040ff;
-}
-
 header {
     background-color: rgba(29, 37, 34, 0.788);
     position: fixed;
@@ -19,7 +9,6 @@ header {
     width: 100vw;
     flex-direction: row;
     font-family: 'Paytone One';
-    /* font-family: Rowdies; */
     padding: 1px 10px;
     color: var(--color-dark2);
 }
@@ -29,26 +18,26 @@ header > h1 {
     color: rgb(246, 251, 253);
 }
 
-header > nav {
-    display: inline-block;
-}
-
 header > nav > ul{
     display: flex;
     width: 80VW;
     justify-content:center;
 }
 
-header > nav > ul > li {
+header > nav > ul > a {
+    text-decoration: none;
+}
+
+header > nav > ul > a > li {
     padding: 10px;
     list-style:none;
     cursor: pointer;
     color: var(--color-white);
 }
-
-header > nav > ul > li:hover {
+header > nav > ul > a > li:hover {
     background-color: rgba(192, 192, 192, 0.445);
 }
+
 
 #menu{
     background: transparent;
@@ -59,59 +48,6 @@ header > nav > ul > li:hover {
     align-self: right;
     margin-left: auto;
     margin-right: 50px;
-}
-
-#seta {
-    padding: 5px;
-    width: 5px;
-    height: 5px;
-    margin: auto;
-    box-shadow: 2px -2px 0 1px #ffffff inset;
-    border: solid transparent;
-    border-width: 0 0 2px 2px;
-    margin-left: auto;
-    margin-right: 50px;
-    transform: rotate(223deg);
-}
-
-.invisible {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-}
-@keyframes move-right {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100vw);
-    }
-}
-@keyframes move-to-back {
-    0% {
-      transform: translateX(100vw);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-}
-.go_to_right {
-    position: relative;
-    animation: move-right 2s forwards;
-}
-.go_to_back {
-    animation: move-to-back 2s forwards;
-}
-
-.hide {
-    transition: 1s;
-    opacity: 0;
-}
-.show{
-    transition: 1s;
-    opacity: 1;
-    width: 80vw;
-    height: 80vh;
 }
 
 #mobile_menu {
@@ -146,7 +82,7 @@ header > nav > ul > li:hover {
     padding: 10px;
     list-style:none;
 }
-#mobile_menu > nav > ul > li > button {
+#mobile_menu > nav > ul > li > a > button {
     height: 100%;
     width: 50vw;
     border-radius: 10px;
@@ -154,6 +90,63 @@ header > nav > ul > li:hover {
     border: 0px;
     font-weight: bold;
 }
+
+#seta {
+    padding: 5px;
+    width: 5px;
+    height: 5px;
+    margin: auto;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    margin-left: auto;
+    margin-right: 50px;
+    transform: rotate(223deg);
+}
+
+.invisible {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+@keyframes move-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+}
+@keyframes move-to-back {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+
+.go_to_right {
+    position: relative;
+    animation: move-right 2s forwards;
+}
+.go_to_back {
+    animation: move-to-back 2s forwards;
+}
+
+.hide {
+    transition: 1s;
+    opacity: 0;
+}
+.show{
+    transition: 1s;
+    opacity: 1;
+    width: 80vw;
+    height: 80vh;
+}
+
+
 
 @media screen and (max-width: 768px) {
     header > nav > ul{
