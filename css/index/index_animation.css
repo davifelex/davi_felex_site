@@ -5,7 +5,7 @@
 }
 #developer_animation > p {
     font-family: 'Black Ops One';
-    font-size: 130px;
+    font-size: 11vw;
     color: white;
 }
 
@@ -38,7 +38,7 @@
         display: none;
     }
     #I{
-        margin-right: 40px;
+        margin-right: 5vw;
     }
 }
 #developer_animation.active_developer {
