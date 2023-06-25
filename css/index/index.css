@@ -18,20 +18,13 @@
     padding: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-:target {
-    scroll-margin-top: .8em;
-}
-
 
 main{
     background-color: var(--color-dark1);
 }
 
 section {
-    height: 500px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -40,4 +33,9 @@ section {
 #tecnologias {
     background-color: var(--color-white);
 }
-
+html {
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+}
