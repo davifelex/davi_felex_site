@@ -119,8 +119,40 @@ header > nav > ul > li:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.233);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#mobile_menu > nav {
+    margin: auto;
+    height: 100%;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    
+    justify-content: center;
+}
+
+#mobile_menu > nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mobile_menu > nav > ul > li {
+    height: 100%;
+    padding: 10px;
+    list-style:none;
+}
+#mobile_menu > nav > ul > li > button {
+    height: 100%;
+    width: 50vw;
+    border-radius: 10px;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
