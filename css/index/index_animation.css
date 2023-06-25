@@ -37,6 +37,9 @@
     .developer{
         display: none;
     }
+    #I{
+        margin-right: 40px;
+    }
 }
 #developer_animation.active_developer {
     .name{
