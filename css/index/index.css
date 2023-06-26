@@ -39,3 +39,30 @@ html {
 body {
     scroll-behavior: smooth;
 }
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+}
+#sobre_conteiner {
+    width: 70vw;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+#sobre_conteiner > div{
+    display: flex;
+    align-items: center;
+}
+#sobre_conteiner > div > p {
+    color: white;
+}
+#sobre_conteiner > img{
+    height: 20VW;
+    width: 40vw;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}

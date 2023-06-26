@@ -7,8 +7,7 @@ function exit_element(element, time) {
 
 function show_element(element, time) {
   element.addEventListener("animationend", function () {
-    element.style.animation = "";
-    // block_animation = false    
+    element.style.animation = ""; 
   });
   element.style.animation = `show ${time}s 1`;
 }
@@ -43,17 +42,14 @@ function changed_text(exit_elements, show_elements) {
           show_element(show_elements[index], 2);
           show_elements[index].style.opacity = 1;
         },
-        100 * n,
-        n
+        100 * n, n
       );
-    
     }
     block_animation = false
     for(let elCounter =0; elCounter< exit_elements.length; elCounter++){
         console.log(exit_elements[elCounter]);
         exit_elements[elCounter].style = "";
     }
-
   }, 1100);
 
 }

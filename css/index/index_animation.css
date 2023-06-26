@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 #developer_animation {
-    margin: auto;
+    margin: auto auto 0px auto;
     display: flex;
 }
 #developer_animation > p {
