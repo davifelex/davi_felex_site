@@ -1,0 +1,63 @@
+:root {
+    --black: #2E2C2F;
+    --white: #F3E8EE;
+    --header_background: #2e2c2f21;
+    --header_color: black;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--white);
+}
+
+
+section {
+    height: 80vw;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+}
+#home > h1 {
+    font-size: 4vw;
+    font-weight: normal;
+}
+
+#github_icon, #linkedin_icon, #whatsap_icon {
+    cursor: pointer;
+    margin: 10px;
+    color: #2E2C2F;
+}
+
+#github_icon:hover {
+    color: #ff0000;
+}
+#linkedin_icon:hover {
+    color: #00aaff;
+}
+#whatsap_icon:hover {
+    color: #37ff00;
+}
+#my_image {
+    height: 100%;
+    width: 20%;
+}
+#apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+#apresentacao > p {
+    width: 50%;
+}

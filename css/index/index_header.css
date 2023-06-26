@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    background-color: var(--header_background);
+    color: var(--header_color);
+    
+}
+header > h1 {
+    display: inline-block;
+    width: auto;
+}
+header > h1 > a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    margin: auto;
+    
+}
+nav > ul{
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+}
+nav > ul > a {
+    text-decoration: none;
+}
+nav > ul > a > li{
+    font-weight: bold;
+    padding: 9px 2vw;
+    list-style: none;
+}
+
+nav > ul > a > li{
+    border-radius: 5px;
+    color: var(--header_color);
+}
+nav > ul > a > li:hover {
+    background-color: rgba(29, 28, 28, 0.144);
+}
