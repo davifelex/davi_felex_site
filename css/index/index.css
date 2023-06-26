@@ -3,6 +3,7 @@
     --white: #F3E8EE;
     --header_background: #2e2c2f21;
     --header_color: black;
+    --sobre_background: #ADB5BD;
 }
 
 *{
@@ -48,10 +49,7 @@ section {
 #whatsap_icon:hover {
     color: #37ff00;
 }
-#my_image {
-    height: 100%;
-    width: 20%;
-}
+
 #apresentacao {
     display: flex;
     align-items: center;
@@ -60,4 +58,30 @@ section {
 }
 #apresentacao > p {
     width: 50%;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--sobre_background);
+}
+#sobre_text{
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+}
+#sobre_text > p {
+    width: 50%;
+    text-align: center;
+}
+#my_image {
+    /* margin: auto; */
+    min-width: 250px;
+    height: 300px;
+    width: 20%;
 }
