@@ -167,7 +167,7 @@ div.skill > svg {
     margin: auto;
     width: 60vw;
 }
-@media screen and (max-width: 593px) {
+@media screen and (max-width: 710px) {
     #skill_text {
         display: none;
     }
