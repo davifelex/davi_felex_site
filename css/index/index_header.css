@@ -13,6 +13,7 @@ header > h1 {
 header > h1 > a{
     text-decoration: none;
     color: black;
+    
 }
 nav{
     margin: auto;
@@ -27,9 +28,10 @@ nav > ul > a {
     text-decoration: none;
 }
 nav > ul > a > li{
-    font-weight: bold;
+    font-weight: normal;
     padding: 9px 2vw;
     list-style: none;
+    
 }
 
 nav > ul > a > li{

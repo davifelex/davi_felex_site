@@ -3,12 +3,15 @@
     --white: #F3E8EE;
     --header_background: #2e2c2f21;
     --header_color: black;
-    --sobre_background: #ADB5BD;
+    --sobre_background: #495057;
+    --sobre_color: rgb(194, 194, 194);
+    --habilidades_background: #DEE2E6;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Viga', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -20,6 +23,7 @@ body {
 
 section {
     height: 80vw;
+    text-shadow: 4px 1px 9px #00000083;
 }
 
 #home {
@@ -30,8 +34,11 @@ section {
     text-align: center;
 }
 #home > h1 {
-    font-size: 4vw;
-    font-weight: normal;
+
+    text-shadow: 1px 2px 4px #0000008c;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight:400;
 }
 
 #github_icon, #linkedin_icon, #whatsap_icon {
@@ -64,24 +71,46 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    min-height: 850px;
+    height: 50vw;
+    color: var(--sobre_color);
     background-color: var(--sobre_background);
 }
 #sobre_text{
-    margin: 0px auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 90%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 #sobre_text > p {
-    width: 50%;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
     text-align: center;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    /* text-justify:auto; */
 }
 #my_image {
     /* margin: auto; */
     min-width: 250px;
     height: 300px;
-    width: 20%;
+    width: 25%;
+    border-radius: 20px;
+}
+
+#habilidades {
+    background-color: var(--habilidades_background);
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+footer, footer > a {
+    color: rgba(0, 0, 0, 0.075);
 }
