@@ -1,68 +1,192 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
-
-
-:root{
-            --color-white: #fff;
-            --color-dark1: rgb(39, 39, 39);
-            --color-dark2: #2d2d2d;
-            --color-dark3: #414141;
-            --color-dark4: #1c1c1c;
-            --color-dark5: #343434;
-            --color-purple: #b040ff;
+:root {
+    --black: #2E2C2F;
+    --white: #F3E8EE;
+    --header_background: #2e2c2f21;
+    --header_color: black;
+    --sobre_background: #495057;
+    --sobre_color: rgb(194, 194, 194);
+    --habilidades_background: #DEE2E6;
 }
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+*{
     margin: 0px;
     padding: 0px;
-}
-
-
-main{
-    background-color: var(--color-dark1);
-}
-
-section {
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-#tecnologias {
-    background-color: var(--color-white);
+    font-family: 'Viga', sans-serif;
 }
 html {
     scroll-behavior: smooth;
 }
 body {
-    scroll-behavior: smooth;
+    background-color: var(--white);
+}
+
+
+section {
+    height: 80vw;
+    text-shadow: 4px 1px 9px #00000083;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+}
+#home > h1 {
+
+    text-shadow: 1px 2px 4px #0000008c;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight:400;
+}
+
+#github_icon, #linkedin_icon, #whatsap_icon {
+    cursor: pointer;
+    margin: 10px;
+    color: #2E2C2F;
+}
+
+#github_icon:hover {
+    color: #ff0000;
+}
+#linkedin_icon:hover {
+    color: #00aaff;
+}
+#whatsap_icon:hover {
+    color: #37ff00;
+}
+
+#apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+#apresentacao > p {
+    width: 50%;
 }
 
 #sobre{
     display: flex;
     flex-direction: column;
-    align-content:space-around;
+    justify-content: center;
+    min-height: 850px;
+    height: 50vw;
+    color: var(--sobre_color);
+    background-color: var(--sobre_background);
 }
-#sobre_conteiner {
-    width: 70vw;
+#sobre_text{
     margin: auto;
-    align-content: center;
-    text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-#sobre_conteiner > div{
+#sobre_text > p {
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    /* text-justify:auto; */
+}
+#my_image {
+    /* margin: auto; */
+    min-width: 250px;
+    height: 300px;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.icons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer, footer > a {
+    color: rgba(0, 0, 0, 0.075);
+}
+
+#habilidades{
+    background-color: var(--habilidades_background);
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-width: auto;
+}
+
+.skill {
     display: flex;
     align-items: center;
 }
-#sobre_conteiner > div > p {
-    color: white;
+.skill_level {
+    background-color: silver;
+    width: 20vw;
+    height: 10px;
 }
-#sobre_conteiner > img{
-    height: 20VW;
-    width: 40vw;
-    justify-content: center;
+div.skill > svg {
+    height: 7vw;
+    width: 7vw;
+}
+
+#python {
+    background-color: orange;
+    width: 90%;
+    height: 10px;
+}
+#css {
+    background-color: rgb(0, 119, 255);
+    width: 40%;
+    height: 10px;
+}
+#cplusplus {
+    background-color:rgb(119, 0, 255);
+    width: 56%;
+    height: 10px;
+}
+#html5 {
+    background-color: orangered;
+    width: 50%;
+    height: 10px;
+}
+#sql {
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 10px;
+}
+
+#skill_text {
     text-align: center;
-    align-content: center;
+    margin: auto;
+    width: 60vw;
+}
+@media screen and (max-width: 593px) {
+    #skill_text {
+        display: none;
+    }
+    #home > h1 {
+        font-size: 8vw;
+    }
+    #my_image {
+        min-width: 10px;
+        width: 65vw;
+        height: 40vh;
+    }
+    #habilidades {
+        height: 56vh;
+    }
+    div.skill > svg {
+        width: 10vw;
+        height: 10vw;
+    }
+    .skill_level {
+        width: 60vw;
+    }
 }
