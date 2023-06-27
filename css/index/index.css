@@ -189,4 +189,7 @@ div.skill > svg {
     .skill_level {
         width: 60vw;
     }
+    header > nav {
+        display: none;
+    }
 }
