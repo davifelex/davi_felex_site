@@ -41,3 +41,10 @@ nav > ul > a > li{
 nav > ul > a > li:hover {
     background-color: rgba(29, 28, 28, 0.144);
 }
+
+
+
+#menu_mobile {
+    margin: auto;
+    display: none;
+}
