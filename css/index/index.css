@@ -118,7 +118,7 @@ section {
 
 #habilidades{
     background-color: var(--habilidades_background);
-    height: 55vh;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     /* align-content: center; */
@@ -235,14 +235,7 @@ footer > p{
     color: rgba(0, 0, 0, 0.349);
 }
 
-::-webkit-scrollbar{
-    background-color: transparent;
-    width: 10px;
-}
-::-webkit-scrollbar-thumb{
-    width: 10px;
-    background-color: tomato;
-}
+
 @media screen and (max-width: 714px) {
     #conteiner {
         display: none;
